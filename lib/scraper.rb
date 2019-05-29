@@ -30,7 +30,7 @@ class Scraper
    social_container.each do |social|
 
      if social.include?("linkedin")
-       student[:linkedin] = social
+       student_profile[:linkedin] = social
 
      elsif social.include?("github")
        student[:github] = social
