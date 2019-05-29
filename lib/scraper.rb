@@ -42,8 +42,8 @@ class Scraper
        student_profile[:blog] = social
    end
    end
-       student_profile[:profile_quote] = doc.css("div.profile-quote").text
-       student_profile[:bio] = doc.css("div.bio-content.content-holder p").text
+       student_profile[:profile_quote] = page.css("div.profile-quote").text
+       student_profile[:bio] = page.css("div.bio-content.content-holder p").text
    student_profile
  end
 end
