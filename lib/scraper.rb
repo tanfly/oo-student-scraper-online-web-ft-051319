@@ -27,7 +27,7 @@ class Scraper
 
     social_container = page.css("div.social-icon-container a").collect {|x| x.attribute("href").value}
 
-   social_container.each do |social_i|
+   social_container.each do |social|
 
      if social_icon.include?("linkedin")
        student[:linkedin] = social_icon
