@@ -33,7 +33,7 @@ class Scraper
        student_profile[:linkedin] = social
 
      elsif social.include?("github")
-       student[:github] = social
+       student_profile[:github] = social
 
      elsif social.include?("twitter")
        student[:twitter] = social
