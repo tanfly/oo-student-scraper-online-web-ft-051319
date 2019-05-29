@@ -29,14 +29,14 @@ class Scraper
 
    social_container.each do |social|
 
-     if social_icon.include?("linkedin")
-       student[:linkedin] = social_icon
+     if social.include?("linkedin")
+       student[:linkedin] = social
 
-     elsif social_icon.include?("github")
-       student[:github] = social_icon
+     elsif social.include?("github")
+       student[:github] = social
 
-     elsif social_icon.include?("twitter")
-       student[:twitter] = social_icon
+     elsif social.include?("twitter")
+       student[:twitter] = social
 
      else
        student[:blog] = social_icon
