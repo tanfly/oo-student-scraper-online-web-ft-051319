@@ -39,7 +39,7 @@ class Scraper
        student_profile[:twitter] = social
 
      else
-       student[:blog] = social
+       student_profile[:blog] = social
    end
    end
        student[:profile_quote] = doc.css("div.profile-quote").text
